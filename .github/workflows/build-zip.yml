@@ -18,7 +18,7 @@ jobs:
       - name: Extract ZIP
         run: |
           mkdir -p source
-          unzip -q mssh-auto-select-source.zip -d source
+          unzip -q "mssh-auto-select-source (1).zip" -d source
 
       - uses: actions/setup-java@v4
         with:

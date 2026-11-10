@@ -36,9 +36,8 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Build APK
-        working-directory: source/MousaviVPN
-        run: gradle :app:assembleDebug --no-daemon --stacktrace
+      - name: Build debug APK
+  run: gradle :app:assembleDebug --no-daemon --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
